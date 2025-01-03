@@ -1,6 +1,10 @@
 import "@/styles/globals.css";
-import type { AppProps } from "next/app";
+import Game from "./api/_game";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+export default function App() {
+  return (
+    <div>
+      <Game />
+    </div>
+  )
 }
